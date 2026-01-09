@@ -5,7 +5,7 @@ import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
-import { MdOutlineSupervisorAccount } from 'react-icons/md';
+import { MdOutlineSupervisorAccount,  } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
@@ -471,98 +471,93 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    title: 'Church Dashboard',
     roles: ['admin', 'user'],
     links: [
       {
-        name: 'ecommerce',
+        name: 'dashboard',
         icon: <FiShoppingBag />,
         roles: ['admin', 'user'],
-
       },
     ],
   },
 
   {
-    title: 'Pages',
+    title: 'Management',
     roles: ['admin', 'user'],
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'members',
+        icon: <RiContactsLine />,
+        roles: ['admin', 'user'],
       },
       {
-        name: 'employees',
+        name: 'workers',
         icon: <IoMdContacts />,
         roles: ['admin'],
       },
       {
-        name: 'customers',
-        icon: <RiContactsLine />,
-        roles: ['user'],
+        name: 'donations',
+        icon: <AiOutlineShoppingCart />,
+        roles: ['admin', 'user'],
+      },
+      {
+        name: 'records',
+        icon: <FiPieChart />,
+        roles: ['admin'],
       },
     ],
   },
+
   {
-    title: 'Apps',
+    title: 'Ministry',
     links: [
       {
-        name: 'calendar',
+        name: 'events',
         icon: <AiOutlineCalendar />,
         roles: ['admin', 'user'],
       },
       {
-        name: 'kanban',
-        icon: <BsKanban />,
-        roles: ['admin', 'user'],
-      },
-      {
-        name: 'editor',
+        name: 'sermons',
         icon: <FiEdit />,
         roles: ['admin', 'user'],
       },
       {
-        name: 'color-picker',
+        name: 'blogs',
         icon: <BiColorFill />,
         roles: ['admin', 'user'],
       },
     ],
   },
+
   {
-    title: 'Charts',
+    title: 'Reports',
     links: [
       {
-        name: 'line',
+        name: 'attendance',
         icon: <AiOutlineStock />,
       },
       {
-        name: 'area',
+        name: 'growth',
         icon: <AiOutlineAreaChart />,
       },
-
       {
-        name: 'bar',
+        name: 'finance',
         icon: <AiOutlineBarChart />,
       },
+    ],
+  },
+
+  {
+    title: 'Analytics',
+    links: [
       {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
+        name: 'members-analytics',
         icon: <RiStockLine />,
       },
       {
-        name: 'color-mapping',
+        name: 'donations-analytics',
         icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
@@ -628,7 +623,7 @@ export const earningData = [
     icon: <MdOutlineSupervisorAccount />,
     amount: '39,354',
     percentage: '-4%',
-    title: 'Customers',
+    title: 'Members',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',

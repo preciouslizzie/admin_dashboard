@@ -5,12 +5,13 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import {
-  Ecommerce, Orders, Employees, Customers, Kanban,
+  Orders, Employees, Customers, Kanban,
   Line, Area, Bar, Pie, Financial, ColorPicker,
   ColorMapping, Editor, Pyramid, Stacked,
 } from './pages';
 
 import Login from './pages/Login';
+import Sermons from './pages/Sermons';
 import Register from './pages/Register';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useStateContext } from './contexts/ContextProvider';
@@ -54,8 +55,8 @@ const DashboardLayout = () => {
 
         <div className="p-4">
           <Routes>
-            <Route index element={<Ecommerce />} />
-            <Route path="ecommerce" element={<Ecommerce />} />
+            <Route index element={<Sermons />} />
+            <Route path="sermons" element={<Sermons />} />
             <Route path="orders" element={<Orders />} />
             <Route path="employees" element={<Employees />} />
             <Route path="customers" element={<Customers />} />
